@@ -1,5 +1,14 @@
 # Packer, Terraform, Docker and AWS
-The below notes are for running apps in AWS using various methods. Links to useful sources below.
+The below notes are for running apps in AWS (EC2 and ECS) using various methods. Links to useful sources below.
+
+## Requirements
+See below for install instructions.
+* AWS account - the tests below use the free tier -- for the most part. check your usage before doing things
+* Docker, Docker Compose
+* Packer
+* Terraform
+* Command line tool
+
 
 ## Methods of getting apps going in AWS
 ### Local Files > Create EC2 Docker Machine > SSH into Machine > docker-compose up
