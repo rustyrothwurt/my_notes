@@ -111,7 +111,13 @@ This is terratest from gruntwork. needs go installed. can run tests locally or i
 * terraform provider: https://www.terraform.io/docs/providers/bitbucket/index.html
 
 ## Installs Needed
-*docker, compose*
+*Docker*
+
+*Docker-machine (Windows)*
+using Git bash
+`if [[ ! -d "$HOME/bin" ]]; then mkdir -p "$HOME/bin"; fi && \
+curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" && \
+chmod +x "$HOME/bin/docker-machine.exe"`
 
 *Unzip*
 `sudo apt-get install unzip`
