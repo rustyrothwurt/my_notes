@@ -12,7 +12,7 @@ See below for install instructions.
 
 ## Methods of getting apps going in AWS
 ### Local Files > Create EC2 Docker Machine > SSH into Machine > docker-compose up
-0. Sample repo https://github.com/sazzer/docker-test
+0. (https://github.com/rustyrothwurt/blog)[Sample repo] 
 1. Export your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY as local env variables, alternately, you can put them in the command below manually. Opt: export local session vars like $region, etc. to use in below command.
 2. Test your local repo with `docker-compose up`
 3. Create an EC2 Docker machine with one of the commands below, replacing aws-sandbox with whatever you want to call the machine and the secret/key with your own: 
@@ -40,6 +40,8 @@ See below for install instructions.
  10. Run docker-compose on your image. Either ssh and run docker-compose or...
  
   `docker-machine ssh aws-sandbox cd /home/path_somewhere/my_ec2_dir && docker-compose up`
+  
+  11. You might have to install various packages (e..g, docker-machine via sudo apt install docker-machine)
 
 
 ### Local Files > Packer > AMI > EC2 (One Instance with Alerts configurable in repo)
